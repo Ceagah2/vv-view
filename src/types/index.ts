@@ -7,4 +7,5 @@ export interface ISection {
   position: 'start' | 'end'
   delay: number
   title: string
+  id: string;
 }

@@ -2,7 +2,7 @@ import { ISection } from "../../../types"
 import { SectionTitle } from "../../atoms/SectionTitle"
 import * as S from './styles'
 
-export const Section = ({ children, position, delay, title }: ISection) => {
+export const Section = ({ children, position, delay, title, id }: ISection) => {
   return(
     < S.Container
       animate = {{
@@ -19,6 +19,7 @@ export const Section = ({ children, position, delay, title }: ISection) => {
         delay: delay || 0,
       }}
       position={position }
+      id={id}
     >
       <SectionTitle>{title}</SectionTitle>
       <S.ChildContainer>
