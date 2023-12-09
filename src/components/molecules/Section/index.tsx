@@ -1,5 +1,5 @@
 import { ISection } from "../../../types"
-import { SectionTitle } from "../SectionTitle"
+import { SectionTitle } from "../../atoms/SectionTitle"
 import * as S from './styles'
 
 export const Section = ({ children, position, delay, title }: ISection) => {
