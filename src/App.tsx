@@ -1,7 +1,11 @@
+import { Container } from "./components"
+import { Carousel } from "./components/Carrousel"
 function App() {
 
   return (
-    <div> Hello World </div>
+    <Container> 
+      <Carousel />
+    </Container>
   )
 }
 

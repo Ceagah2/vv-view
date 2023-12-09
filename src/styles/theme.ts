@@ -4,7 +4,8 @@ export const theme = {
     emerald: '#2ECC71',
     sun: '#F1C40F',
     white: '#FFFFFF',
-    gray: '#CCCCCC'
+    gray: '#CCCCCC',
+    background: '#F5F5F5',
   },
   fonts: {
     body: "'Roboto', sans-serif",
@@ -12,6 +13,7 @@ export const theme = {
     description: "'Open Sans', monospace",
   },
   sizes: {
+    banner: '4rem',
     heading: '2rem',
     subheading: '1.5rem',
     body: '1.25rem',
