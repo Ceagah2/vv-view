@@ -1,9 +1,10 @@
-import { Container } from "./components"
-import { Carousel } from "./components/Carrousel"
+import { Container, Carousel } from "./components/atoms"
+import { NavBar } from "./components/atoms/NavBar"
 function App() {
 
   return (
     <Container> 
+      <NavBar />
       <Carousel />
     </Container>
   )
