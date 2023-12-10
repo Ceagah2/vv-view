@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 
 export const Container = styled(motion.section) <{ position: 'start' | 'end' }>`
-  width: 100%;
+  width: 92vw;
   opacity: 0;
   display: flex;
   flex-direction: column;
@@ -29,11 +29,11 @@ Container.defaultProps = {
 
 export const ChildContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: center;
   margin-top: 20px;
-  width: 50%;
+  width: 100%;
   @media (max-width: 450px) {
     width: 100%; 
   }

@@ -4,7 +4,7 @@ import * as S from './styles'
 
 export const Section = ({ children, position, delay, title, id }: ISection) => {
   return(
-    < S.Container
+    <S.Container
       animate = {{
         opacity: 1,
         x: 0,

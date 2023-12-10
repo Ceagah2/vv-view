@@ -7,7 +7,7 @@ type TContainer = {
 
 export const Container = styled.nav<TContainer>`
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   display: flex;
   flex-direction: row;
   align-items: flex-end;

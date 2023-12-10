@@ -9,3 +9,11 @@ export interface ISection {
   title: string
   id: string;
 }
+
+export interface ISectionText {
+  children: string;
+}
+
+export interface ISectionImage {
+  image: string
+}

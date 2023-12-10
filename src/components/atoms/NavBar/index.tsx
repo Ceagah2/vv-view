@@ -1,7 +1,7 @@
 import * as S from './styles'
 import { MenuData } from '../../../constants/menu-data'
-import Parallax from '../../../assets/parallax3.png'
 export const NavBar = () => {
+  const Parallax = 'https://placehold.co/1240x1080?text=Parallax'
   return(
     <S.Container bgImage={Parallax}> 
         <S.MenuLink href='#'>
