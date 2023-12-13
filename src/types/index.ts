@@ -17,3 +17,13 @@ export interface ISectionText {
 export interface ISectionImage {
   image: string
 }
+
+export interface ICard {
+  id: number
+  name: string
+  image: string
+  description: string
+  value: string
+  category: string
+  date: string
+}
