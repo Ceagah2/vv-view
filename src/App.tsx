@@ -1,5 +1,6 @@
 import { Container, SectionImage, SectionText } from "./components/atoms"
 import { Header, Section } from "./components/molecules/"
+import { CardContainer } from "./components/molecules/CardContainer"
 function App() {
   const AboutImage = 'https://placehold.co/1240x1080?text=Foto+da+equipe+vale+viagens'
 
@@ -20,6 +21,9 @@ function App() {
           Nobis animi nulla odio eum totam dolorem asperiores aperiam quidem! Explicabo dicta cupiditate, possimus harum hic ut? Iusto, ex dolor! Provident cupiditate earum numquam quis, iste deleniti. Numquam, doloremque accusamus?
         </SectionText>
         <SectionImage image={AboutImage} />
+      </Section>
+      <Section id="viagens" title="Próximas viagens" position="end" delay={1}>
+        <CardContainer/>
       </Section>
     </Container>
   )
