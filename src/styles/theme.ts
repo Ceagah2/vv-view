@@ -6,6 +6,7 @@ export const theme = {
     white: '#FFFFFF',
     gray: '#CCCCCC',
     background: '#F5F5F5',
+    royalPink: '#E1306C',
   },
   fonts: {
     body: "'Roboto', sans-serif",

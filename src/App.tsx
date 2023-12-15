@@ -1,5 +1,5 @@
 import { Container, SectionImage, SectionText } from "./components/atoms"
-import { Header, Section } from "./components/molecules/"
+import { Footer, Header, Section } from "./components/molecules/"
 import { CardContainer } from "./components/molecules/CardContainer"
 function App() {
   const AboutImage = 'https://placehold.co/1240x1080?text=Foto+da+equipe+vale+viagens'
@@ -7,7 +7,7 @@ function App() {
   return (
     <Container> 
       <Header />
-      <Section id='sobre' title="Sobre a vale viagens" position="start" delay={0.5}>
+      <Section id='sobre' title="Sobre a vale viagens" position="start" delay={1}>
         <SectionText>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam omnis velit suscipit culpa dignissimos, eius temporibus animi soluta nisi cumque eligendi at reiciendis atque odit nulla consequuntur molestias porro necessitatibus.
           Vel excepturi quaerat itaque sit quo similique minus non deleniti necessitatibus deserunt ipsum earum laudantium animi quod repellat quidem ducimus at alias, omnis dicta! Maxime consectetur eligendi officiis dignissimos cupiditate.
@@ -22,8 +22,11 @@ function App() {
         </SectionText>
         <SectionImage image={AboutImage} />
       </Section>
-      <Section id="viagens" title="Próximas viagens" position="end" delay={1}>
+      <Section id="viagens" title="Próximas viagens" position="end" delay={2}>
         <CardContainer/>
+      </Section>
+      <Section id="contato" title="Fale conosco" position="center" delay={3}>
+        <Footer />
       </Section>
     </Container>
   )

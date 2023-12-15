@@ -4,7 +4,7 @@ export interface IContainer {
 
 export interface ISection {
   children: React.ReactNode
-  position: 'start' | 'end'
+  position: 'start' | 'end' | 'center'
   delay: number
   title: string
   id: string;
@@ -26,4 +26,9 @@ export interface ICard {
   value: string
   category: string
   date: string
+}
+
+export interface ISocial {
+  name: string
+  link: string
 }

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 
-export const Container = styled(motion.section) <{ position: 'start' | 'end' }>`
+export const Container = styled(motion.section) <{ position: 'start' | 'end' | 'center' }>`
   width: 92vw;
   opacity: 0;
   display: flex;
@@ -11,7 +11,7 @@ export const Container = styled(motion.section) <{ position: 'start' | 'end' }>`
   &:not(:first-child) {
     margin-top: 40px;
   }
-  align-items: ${(props) => (props.position === 'start' ? 'flex-start' : 'flex-end')};
+  align-items: ${(props) => (props.position === 'start' ? 'flex-start' : props.position === 'end' ? 'flex-end' : 'center')};
 
   @media (max-width: 450px) {
     align-items: center; 

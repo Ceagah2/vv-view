@@ -1,0 +1,2 @@
+export const INSTAGRAM_LINK = 'https://www.instagram.com/valeviagens/'
+export const WHATSAPP_LINK = 'https://wa.me/message/4JB7243VZ7IBJ1?fbclid=IwAR1EWYUCB60k6-rNcvmmkcQiE_K044z1VQIUQviuzbiPuwvAwxqTrxkmmiY'
