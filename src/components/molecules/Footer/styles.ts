@@ -8,6 +8,12 @@ export const Container = styled.footer`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 450px) {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
 `
 export const TextContent = styled.div`
   width: 45vw;
@@ -17,12 +23,22 @@ export const TextContent = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  @media (max-width: 450px) {
+    width: 90%;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
 `
 export const TextTitle = styled.h2`
   font-size: ${theme.sizes.heading};
   font-family: ${theme.fonts.heading};
   color: ${theme.colors.navy};
   text-align: center;
+
+  @media (max-width: 450px) {
+    font-size: ${theme.sizes.subheading};
+  }
 `
 export const Text = styled.p`
   font-size: ${theme.sizes.body};

@@ -4,10 +4,12 @@ import { motion } from 'framer-motion'
 
 export const Container = styled(motion.section) <{ position: 'start' | 'end' | 'center' }>`
   width: 92vw;
+  height: 100%;
   opacity: 0;
   display: flex;
   flex-direction: column;
   padding: 20px;
+
   &:not(:first-child) {
     margin-top: 40px;
   }
@@ -15,6 +17,7 @@ export const Container = styled(motion.section) <{ position: 'start' | 'end' | '
 
   @media (max-width: 450px) {
     align-items: center; 
+    height: 100%;
   }
 `;
 
@@ -37,5 +40,6 @@ export const ChildContainer = styled.div`
   @media (max-width: 450px) {
     width: 100%; 
     flex-direction: column;
+    height: 100%;
   }
 `

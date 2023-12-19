@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion';
 import { ICard } from '../../../types'
 import { whatsappMessage } from '../../../constants/whatsapp-api';
 
@@ -54,19 +53,30 @@ export const Card = (props: ICard) => {
     handleIcon();
   },[]);
 
+  const handleHover = () => {
+    setIsHovered(!isHovered);
+  };
+
+  const handleTouch = () => {
+    setIsHovered(!isHovered);
+    handleBooking(name, date); 
+  };
   
   return (
     <S.Container key={id} onClick={() => handleBooking(name, date)}>
-      <motion.div
+      <S.Card
         className="card-content"
         onHoverStart={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
         initial={{ rotateY: 0 }}
         animate={{ rotateY: isHovered ? 180 : 0 }}
         transition={{ duration: 0.5 }}
+        onTap={handleTouch} 
+        onMouseEnter={handleHover} 
+        onMouseLeave={handleHover} 
+        onTouchStart={handleTouch} 
+        onTouchEnd={handleTouch} 
         style={{
-          width: '100%',
-          height: '100%',
           position: 'relative',
           transformStyle: 'preserve-3d',
         }}
@@ -84,7 +94,7 @@ export const Card = (props: ICard) => {
             <S.CardValue>R$ {value}</S.CardValue>
           </S.ValueContainer>
         </S.CardBack>
-      </motion.div>
+      </S.Card>
     </S.Container>
   );
 };

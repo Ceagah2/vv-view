@@ -7,13 +7,23 @@ export const Container = styled.div`
   flex-wrap: wrap;
   justify-content: space-between; 
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 100px;
 
   @media (min-width: 768px) {
     justify-content: center; 
+    gap: 40px;
   }
 
   @media (min-width: 1024px) {
-    justify-content: flex-start; /* Alinha os cards à esquerda em telas maiores */
+    justify-content: flex-start;
+  }
+
+  @media (max-width: 450px) {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 0;
   }
 `;
