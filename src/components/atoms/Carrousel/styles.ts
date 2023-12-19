@@ -11,6 +11,8 @@ export const Container = styled.div`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+ 
 `;
 
 export const SlideContainer = styled.div`
@@ -29,6 +31,10 @@ export const ImageContainer = styled.div<TProps>`
   display: flex;
   justify-content: center;
   align-items: center;
+
+   @media (max-width: 450px) {
+    border-radius: 16px;
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -38,6 +44,11 @@ export const TextContainer = styled.div`
   justify-content: center;
   padding: 0 20px; 
   z-index: 9;
+
+  @media (max-width: 450px) {
+    width: 100%;
+
+  }
 `;
 
 export const Title = styled.h2`
@@ -45,5 +56,10 @@ export const Title = styled.h2`
   font-size: ${theme.sizes.banner};
   color: ${theme.colors.white};
   text-shadow: 1px 1px 1px ${theme.colors.navy};
+
+  @media (max-width: 450px) {
+    font-size: ${theme.sizes.heading};
+    text-align: center;
+  }
 `;
 

@@ -36,6 +36,11 @@ export const Menu = styled.ul`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 450px) {
+    width: 100%;
+    padding: 20px;
+  }
   `;
 export const MenuItem = styled.li`
   list-style: none;

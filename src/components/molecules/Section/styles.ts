@@ -36,5 +36,6 @@ export const ChildContainer = styled.div`
   width: 100%;
   @media (max-width: 450px) {
     width: 100%; 
+    flex-direction: column;
   }
 `

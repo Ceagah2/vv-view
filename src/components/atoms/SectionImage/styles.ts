@@ -6,6 +6,10 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+   @media (max-width: 450px) {
+    width: 100%;
+    margin-top: 20px;
+  }
 `
 
 export const Image = styled.img`
@@ -13,4 +17,9 @@ export const Image = styled.img`
   margin-left: 5vw;
   object-fit: cover;
   object-position: center;
+  border-radius: 16px;
+
+  @media (max-width: 450px) {
+    width: 80vw;
+  }
 `
